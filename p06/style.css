@@ -10,4 +10,162 @@
     box-sizing: border-box;
 }
 
-body
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: var(--primary-color);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    z-index: 100;
+    transform: translateX(-100%);
+}
+
+nav .logo {
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav .logo img {
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 2px solid rgba(200, 200, 200, 0.2);
+}
+
+nav ul li:first-of-type {
+    border-top: 2px solid rgba(200, 200, 200, 0.2);
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 125%;
+    position: relative;
+    padding: 40px 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 30px 0;
+}
+
+button, input[type='submit'] {
+    background-color: var(--secondary-color);
+    border: 0;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.toggle {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.apply {
+    padding: 12px 30px;
+    font-size: 18px;
+}
+
+.container {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+}
+
+.modal-container {
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modal {
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    width: 400px;
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+}
+
+.modal-header h3 {
+    margin: 0;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-form div {
+    margin: 15px 0;
+}
+
+.modal-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-form .form-input {
+    padding: 10px;
+    width: 100%;
+}
+
+.close-btn {
+    background: transparent;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+}
