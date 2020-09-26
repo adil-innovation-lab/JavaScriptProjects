@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: steelblue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+}
+
+h1 {
+    margin: 20px 0 0;
+}
+
+.game-container {
+    padding: 20px 30px;
+    position: relative;
+    margin: auto;
+    width: 450px;
+    height: 350px;
+}
+
+.wrong-letters {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.wrong-letters p {
+    margin: 0 0 5px;
+}
+
+.wrong-letters span {
+    font-size: 24px;
+}
+
+.word {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.letter {
+    border-bottom: 3px solid skyblue;
+    display: inline-flex;
+    font-size: 36px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    width: 20px;
+    height: 50px;
+}
+
+.figure-container {
+    stroke: white;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    fill: transparent;
+}
+
+.hangman-part {
+    display: none;
+}
+
+.popup-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.popup {
+    background-color: skyblue;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+.popup h2 {
+    color: black;
+}
+
+.popup button {
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.popup button:focus {
+    outline: 0;
+}
+
+.popup button:active {
+    transform: scale(0.95);
+}
+
+.slider-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: -50px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-container p {
+    margin: 0;
+}
+
+.slider-container.show {
+    transform: translateY(-50px);
+}
