@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Infinite Scroll</title>
+</head>
+<body>
+    <h1>Blog with Infinite Scroll</h1>
+
+    <!-- Input field for filtering fetched posts -->
+    <div class="filter-container">
+        <input type="text" class="filter" id="filter" placeholder="Enter keyword for filter">
+    </div>
+
+    <!-- This container will hold all posts fetched from API -->
+    <div id="post-container"></div>
+
+    <div class="loader" id="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
